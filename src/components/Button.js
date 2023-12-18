@@ -6,7 +6,7 @@ const Button = (props) => {
     );
 }
 Button.defaultProps = {
-    color: 'btn-gr'
+    color: 'btn-gr-blue'
 }
 Button.propTypes = {
     color: PropTypes.string,
