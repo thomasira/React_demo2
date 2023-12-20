@@ -9,7 +9,7 @@
     @apply hover:bg-gradient-to-bl
 }
 .btn-gr-red{
-    @apply bg-gradient-to-br from-red-700 to-pink-300 
+    @apply bg-gradient-to-br from-red-700 to-pink-500 
 }
 .btn-gr-green{
     @apply bg-gradient-to-br from-green-400 to-green-800
@@ -18,14 +18,20 @@
     @apply block w-full
 }
 .add-form{
-    @apply p-3 border-t bg-green-200 rounded-lg
+    @apply p-3 border-t bg-green-200 rounded-lg flex flex-col gap-y-3
 }
 .form-control label{
-    @apply block mt-2 text-sm font-medium text-stone-900
+    @apply block text-sm font-medium text-stone-900
 }
 .form-control input{
     @apply block rounded bg-green-300 border border-green-400 p-2 w-full focus:border-green-800 outline-green-800
 }
+.form-control-check{
+    @apply flex
+}
 .form-control-check label{
-    @apply flex justify-between
+    @apply flex grow-0
+}
+.form-control-check input{
+    @apply block w-[50px]
 }
